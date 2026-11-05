@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "name": "Teammate 1",
+    "image": "round-01.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 622,
+      "y": 594
+    }
+  },
+  {
+    "id": 2,
+    "name": "Teammate 2",
+    "image": "round-02.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 735,
+      "y": 823
+    }
+  },
+  {
+    "id": 3,
+    "name": "Teammate 3",
+    "image": "round-03.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 849,
+      "y": 243
+    }
+  },
+  {
+    "id": 4,
+    "name": "Teammate 4",
+    "image": "round-04.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 962,
+      "y": 472
+    }
+  },
+  {
+    "id": 5,
+    "name": "Teammate 5",
+    "image": "round-05.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1076,
+      "y": 701
+    }
+  },
+  {
+    "id": 6,
+    "name": "Teammate 6",
+    "image": "round-06.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1189,
+      "y": 930
+    }
+  },
+  {
+    "id": 7,
+    "name": "Teammate 7",
+    "image": "round-07.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1302,
+      "y": 350
+    }
+  },
+  {
+    "id": 8,
+    "name": "Teammate 8",
+    "image": "round-08.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1416,
+      "y": 579
+    }
+  },
+  {
+    "id": 9,
+    "name": "Teammate 9",
+    "image": "round-09.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1529,
+      "y": 808
+    }
+  },
+  {
+    "id": 10,
+    "name": "Teammate 10",
+    "image": "round-10.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1643,
+      "y": 229
+    }
+  },
+  {
+    "id": 11,
+    "name": "Teammate 11",
+    "image": "round-11.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1756,
+      "y": 457
+    }
+  },
+  {
+    "id": 12,
+    "name": "Teammate 12",
+    "image": "round-12.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 226,
+      "y": 686
+    }
+  },
+  {
+    "id": 13,
+    "name": "Teammate 13",
+    "image": "round-13.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 339,
+      "y": 915
+    }
+  },
+  {
+    "id": 14,
+    "name": "Teammate 14",
+    "image": "round-14.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 453,
+      "y": 336
+    }
+  },
+  {
+    "id": 15,
+    "name": "Teammate 15",
+    "image": "round-15.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 566,
+      "y": 564
+    }
+  },
+  {
+    "id": 16,
+    "name": "Teammate 16",
+    "image": "round-16.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 680,
+      "y": 793
+    }
+  },
+  {
+    "id": 17,
+    "name": "Teammate 17",
+    "image": "round-17.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 793,
+      "y": 214
+    }
+  },
+  {
+    "id": 18,
+    "name": "Teammate 18",
+    "image": "round-18.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 907,
+      "y": 443
+    }
+  },
+  {
+    "id": 19,
+    "name": "Teammate 19",
+    "image": "round-19.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1020,
+      "y": 671
+    }
+  },
+  {
+    "id": 20,
+    "name": "Teammate 20",
+    "image": "round-20.svg",
+    "width": 1920,
+    "height": 1080,
+    "target": {
+      "width": 36,
+      "height": 72,
+      "x": 1134,
+      "y": 900
+    }
+  }
+]
