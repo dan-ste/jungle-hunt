@@ -2,7 +2,7 @@
 
 A "Where's Waldo" style game for a hackathon. Each round shows a cartoon Costa Rica jungle scene with one Visible team member hidden in it. Two team leads race to find them.
 
-Several people work on this at the same time, each with their own Claude Code on their own machine. This file is the only context every Claude shares, so keep it up to date.
+Teammates may open this repo with their own Claude Code. This file is the only context every Claude shares, so keep it up to date.
 
 ## Game rules
 
@@ -19,7 +19,7 @@ Several people work on this at the same time, each with their own Claude Code on
 - Vite + React + TypeScript. No backend. Deployed to GitHub Pages at https://dan-ste.github.io/jungle-hunt/ on every push to `main`.
 - Node 22 (`nvm use`), pnpm.
 - `pnpm install` — install
-- `pnpm dev` — run at http://localhost:5190/jungle-hunt/ (`?round=7` opens a round, `?debug` outlines the target)
+- `pnpm dev` — run at http://localhost:5190/jungle-hunt/ (`?round=7` opens a round viewer with the target outlined; `?debug` outlines the target during play and logs click coordinates)
 - `pnpm test` — unit tests (Vitest)
 - `pnpm build` — type-check and build. Run it before every PR.
 - `pnpm mocks` — regenerate the 20 mock rounds
@@ -29,15 +29,19 @@ Several people work on this at the same time, each with their own Claude Code on
 - `src/rounds/types.ts` — the round format. This is the contract between code and art. Change it only after telling the team.
 - `src/rounds/rounds.json` — the 20 rounds: image file, team member name, and their rectangle. `src/rounds/index.ts` loads and validates it.
 - `public/rounds/` — the round images.
-- `src/components/RoundImage.tsx` — draws a round scaled to fit, with the `?debug` outline.
-- `src/App.tsx` — the app shell.
+- `src/game/match.ts` — the match state: phases, round and lead, results, winners. A pure reducer with tests. `src/game/storage.ts` saves it to `localStorage`.
+- `src/game/hitTest.ts` — maps a click to image pixels and checks it against the target.
+- `src/components/RoundPlay.tsx` — one lead's turn: timer, clicks, penalty, give up.
+- `src/components/RoundImage.tsx` — draws a round scaled to fit, with the `?debug` outline or the reveal marker.
+- `src/components/SetupScreen.tsx`, `PassScreen.tsx`, `ResultScreen.tsx`, `FinalScreen.tsx` — one file per phase.
+- `src/App.tsx` — picks the screen for the current phase. `?round=N` opens a round viewer with the outline, for placing targets.
 - `scripts/generate-mocks.mjs` — writes mock rounds (busy shapes with a small striped figure hidden among them).
 
 ## Round format
 
 - One entry per round in `rounds.json`: `id` (1–20, in order), `name`, `image` (file name under `public/rounds/`), `width`, `height`, and `target`.
 - `target` is the team member's rectangle in image pixels, `x`/`y` top-left. Make it tight around the drawing. A click inside it counts.
-- To set a target, open the round with `?debug`, adjust the numbers in `rounds.json`, and check the outline sits on the character.
+- To set a target, open `?round=N`, adjust the numbers in `rounds.json`, and check the outline sits on the character.
 
 ## Art spec
 
@@ -48,10 +52,7 @@ Several people work on this at the same time, each with their own Claude Code on
 
 ## Who works on what
 
-Pick one area, write your name next to it, and stay inside its files. This avoids merge conflicts.
-
-- Round play (image, timer, hit test, wrong-click penalty, give up) — _free_
-- Match flow (team setup, pass screens, round result, scoreboard, final winner, localStorage) — _free_
+- Game code — Dan
 - Art (20 images, targets) — _free_
 
 ## Team rules
